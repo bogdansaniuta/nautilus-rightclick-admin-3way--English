@@ -2,7 +2,7 @@
 
 > Security warning dialog when opening Nautilus (file manager) as administrator on Linux.
 
-![Warning Window](screenshot.png)
+![Warning Window](screenshot-en.png)
 
 ## 📋 Description
 
