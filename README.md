@@ -2,7 +2,7 @@
 
 > Delete files as administrator directly from the right-click menu with a security warning dialog.
 
-![Warning Window](screenshot.png)
+![Warning Window](screenshot-en.png)
 
 ## 📋 Description
 
