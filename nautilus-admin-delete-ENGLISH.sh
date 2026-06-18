@@ -1,4 +1,3 @@
-sudo tee /usr/local/bin/nautilus-admin-delete.sh > /dev/null << 'EOF'
 #!/bin/bash
 
 FILE="$1"
@@ -15,7 +14,6 @@ zenity --question \
 <span foreground="#FF6600" size="x-large" weight="bold">'"$FILENAME"'</span>
 
 <span foreground="#333333">Location:</span> <span foreground="#CC0000">'"$FILE"'</span>
-<span foreground="#333333" weight="bold">Size:</span> <span foreground="#0066CC">'"$(du -sh "$FILE" 2>/dev/null | cut -f1) B"'</span>
 
 <span foreground="#333333">This action</span> <span foreground="#CC0000" weight="bold" size="large">CANNOT be undone</span><span foreground="#333333">.</span>
 
@@ -28,11 +26,10 @@ zenity --question \
 if [ $? -eq 0 ]; then
     pkexec rm -f "$FILE"
     if [ $? -eq 0 ]; then
-        zenity --info --title="✅  Deleted  ✅" --text='<span foreground="#228B22" weight="bold">File Deleted Successfully.</span>' --timeout=10
+        zenity --info --title="✅  Deleted  ✅" --text='<span foreground="#228B22" weight="bold">File deleted successfully.</span>' --timeout=10
     else
         zenity --error --title="❌  Error  ❌" --text='<span foreground="#CC0000" weight="bold">Could not delete the file.</span>'
     fi
 else
     exit 0
 fi
-EOF
