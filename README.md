@@ -8,7 +8,7 @@
 
 **Nautilus Right-Click Admin (3-Way)** adds two options to the Nautilus context menu:
 - **"Open as Administrator"** — Open files/folders with root permissions
-- **"Delete as Administrator"** — Permanently delete system files
+- **"Delete as Administrator"**  — Permanently delete system files ( **"supports multiple selection with Ctrl + Click"**  )
 
 When selected, it shows a visual warning dialog (colors, icons, bold text) before executing the action.
 
